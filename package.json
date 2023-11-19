@@ -1,0 +1,28 @@
+{
+  "name": "reactsocialnetwork",
+  "version": "1.0.0",
+  "description": "![MERN Stack](https://img.shields.io/badge/Tech_Stack-MERN-blue) ![Build Status](https://img.shields.io/badge/Build-Passing-green) ![License](https://img.shields.io/badge/License-MIT-yellow) ![Contributors](https://img.shields.io/badge/Contributors-4-blue) ![Semantic Versioning](https://img.shields.io/badge/Semantic_Versioning-2.0.0-blueviolet) ![GitHub Flow](https://img.shields.io/badge/GitHub_Flow-Active-brightgreen) ![Changelog](https://img.shields.io/badge/Changelog-Keep_a_Changelog-red) ![TODO.md](https://img.shields.io/badge/TODO.md-Active-yellow)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smajdalf530/reactsocialnetwork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smajdalf530/reactsocialnetwork/issues"
+  },
+  "homepage": "https://github.com/Smajdalf530/reactsocialnetwork#readme",
+  "dependencies": {
+    "@mui/core": "^5.0.0-alpha.54",
+    "express": "^4.18.2",
+    "react": "^18.2.0"
+  }
+}
