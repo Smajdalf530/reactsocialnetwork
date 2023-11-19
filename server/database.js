@@ -152,12 +152,12 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
         db.run(
             `CREATE TABLE IF NOT EXISTS Friendship (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      userId INTEGER,
-      friendId INTEGER,
+      user_Id INTEGER,
+      friend_Id INTEGER,
       status TEXT NOT NULL,
       createdAt DATE DEFAULT CURRENT_TIMESTAMP,
-      FOREIGN KEY (userId) REFERENCES User(id),
-      FOREIGN KEY (friendId) REFERENCES User(id)
+      FOREIGN KEY (user_Id) REFERENCES User(id),
+      FOREIGN KEY (friend_Id) REFERENCES User(id)
     )`,
             (err) => {
                 if (err) {
@@ -167,7 +167,7 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
                 } else {
                     // Table just created, creating some rows
                     const insert =
-                        "INSERT OR REPLACE INTO Friendship (userId, friendId, status, createdAt) VALUES (?,?,?,?)";
+                        "INSERT OR REPLACE INTO Friendship (user_Id, friend_Id, status, created_At) VALUES (?,?,?,?)";
 
                     db.run(insert, [3, 4, "accepted", new Date()]);
                 }

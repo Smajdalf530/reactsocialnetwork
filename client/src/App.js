@@ -24,6 +24,7 @@ import getFromLocalStorage from "./utils/getFromLocalStorage";
 import Feedback from "./pages/Feedback/Feedback";
 import saveToLocalStorage from "./utils/saveToLocalStorage";
 import helpCenterContentCategories from "./data/json/helpCenterContentCategories.json";
+import GroupsDashboard from "./pages/GroupsDashboard/GroupsDashboard";
 
 const App = () => {
     const lastLoginCredentials = getFromLocalStorage("lastLoginCredentials");
@@ -195,6 +196,15 @@ const App = () => {
                                         path="/admin"
                                         element={
                                             <AdminDashboard
+                                                themeMode={themeMode}
+                                            />
+                                        }
+                                    />
+                                    <Route
+                                        exact
+                                        path="/groups"
+                                        element={
+                                            <GroupsDashboard
                                                 themeMode={themeMode}
                                             />
                                         }
